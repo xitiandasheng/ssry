@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>管理员登录</title>
+    <link rel="stylesheet" type="text/css" href="css/houtaiguanli.css" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="main">
+        <div id="login_main">
+            <div class="login_main_l">
+                <h4>管理员登录</h4>
+                <div class="li_o">
+                    <input id="user_name" value="" type="text" class="inp" placeholder="请输入您的用户名">
+                    <div id="user_name_err" class="msg"></div>
+                </div>
+                <div class="li_o">
+                    <input id="pass_word" value="" type="password" class="inp" placeholder="请输入您的密码">
+                    <div id="pass_word_err" class="msg"></div>
+                </div>
+            </div>
+            <div class="fr" onclick="login()">登　录</div>
+        </div>
+    </div>
+    <script>
+        function login() {
+            var userName = document.getElementById('user_name').value;
+            var passWord = document.getElementById('pass_word').value;
+
+            if (userName !== 'admin') {
+                document.getElementById('user_name_err').innerHTML = '用户名错误';
+            } else {
+                document.getElementById('user_name_err').innerHTML = '';
+            }
+
+            if (passWord !== '123456') {
+                document.getElementById('pass_word_err').innerHTML = '密码错误';
+            } else {
+                document.getElementById('pass_word_err').innerHTML = '';
+            }
+
+            if (userName === 'admin' && passWord === '123456') {
+                document.getElementById('login_main').innerHTML = '登录成功';
+                window.location.href = 'shencha.html'; // 跳转页面
+
+            }
+        }
+    </script>
+</body>
+</html>

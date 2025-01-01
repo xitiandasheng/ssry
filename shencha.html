@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>书籍审核</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css\shencha.css">
+  </style>
+</head>
+
+<body>
+
+  <img src="images\logo.png" alt="Logo" class="logo">
+  <a href="index.html" class="nav-link">退出管理员模式</a>
+
+  <!-- 搜索框 -->
+  <div class="search-box">
+    <input type="text" placeholder="搜索书籍...">
+    <input type="submit" value="搜索">
+  </div>
+
+  <!-- 网页头-弹性布局 -->
+  <div class="head">
+    <a href="index.html"><div>网站首页</div></a>
+    <a href="#"><div>用户管理</div></a>
+    <a href="shencha.html"><div>书籍审核</div></a>
+    <a href="#"><div>订单管理</div></a>
+    <a href="#"><div>交易问题</div></a>
+  </div>
+  <div>
+    <ul class="shengcha">
+      <li class="shengchaList">
+        <h2>《祁连山阙》</h2>
+        <img src="tupian\3.jpg" alt="《祁连山阙》" class="activity-img">
+        <p>简介：《祁连山阙》是马步升创作的散文集， 该书共20多万字，收录42篇散文，是作者30多年对祁连山地理、生态、人文、历史、文化研读和实地考察后创作的思想荟萃 。作者以生动形象的语言梳理了祁连山麓的自然环境、生态建设、人文资源和历史文化。
+        </p>
+        <span class="price-tag">￥20.00</span> 
+        <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+        <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+    </li>
+                    <li class="shengchaList">
+                      <h2>《阅读是暗淡生活中闪光的一小时》</h2>
+                      <img src="tupian\4.jpg" alt="《阅读是暗淡生活中闪光的一小时》" class="activity-img">
+                      <p>简介：《阅读是暗淡生活中闪光的一小时》是英国文学巨匠奥斯卡·王尔德的文集,采取对话录的形式，通过维维安和西里尔、欧内斯特和吉尔伯特等人物之间的对话，探讨了艺术、文学、社会政治等多方面的问题。
+                      </p>
+                      <span class="price-tag">￥30.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《Z的悲剧》</h2>
+                      <img src="tupian\5.jpg" alt="《Z的悲剧》" class="activity-img">
+                      <p>简介：《Z的悲剧》以其错综复杂的情节和深刻的人性探讨而受到读者的喜爱，展现了主人公们如何运用智慧和勇气揭开真相。这部作品不仅是推理小说迷的必读之作，也被许多推理大师如阿加莎·克里斯蒂和博尔赫斯所推崇
+                      </p>
+                      <span class="price-tag">￥25.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《当白话遇见古诗文》</h2>
+                      <img src="tupian\6.jpg" alt="《当白话遇见古诗文》" class="activity-img">
+                      <p>简介：《当白话遇见古诗文》是由郁海彤所著的一本文学类图书，于2024年11月由台海出版社出版 。这本书通过将白话文与古诗文相对照的形式，从两个维度展示相应的优美词句，旨在让读者领略不同语言风格的美与韵味
+                      </p>
+                      <span class="price-tag">￥20.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《有趣的中国古建筑》</h2>
+                      <img src="tupian\7.jpg" alt="《有趣的中国古建筑》" class="activity-img">
+                      <p>简介：《有趣的中国古建筑》不仅是一本科普读物，也是一本旅行指南。书中详细标注了古建筑的名称、地址等信息，方便读者在旅行中对照书中的精美细节图，感受古建的魅力。
+                      </p>
+                      <span class="price-tag">￥25.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span>     
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《血与蜜之地》</h2>
+                      <img src="tupian\8.jpg" alt="《血与蜜之地》" class="activity-img">
+                      <p>简介：《血与蜜之地》是由刘子超所著的旅行文学作品， 。这本书记录了作者穿越素有“欧洲火药桶”之称的巴尔干半岛的经历，作品通过作者的旅行见闻，讲述了一个个寻找家园的故事，涉及历史、文化、战争和民族等多个主题 。
+                      </p>
+                      <span class="price-tag">￥20.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《分裂的共识：一部全新的美国史》</h2>
+                      <img src="tupian\9.jpg" alt="《分裂的共识：一部全新的美国史》" class="activity-img">
+                      <p>简介：《分裂的共识：一部全新的美国史》是由美国历史学家吉尔·莱波雷（Jill Lepore）所著的一部关于美国历史的著作。这本书于2024年9月由新星出版社出版，提供了一个全新的视角来审视美国的历史
+                        。
+                      </p>
+                      <span class="price-tag">￥28.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《修复世界》</h2>
+                      <img src="tupian\10.jpg" alt="《修复世界》" class="activity-img">
+                      <p>简介：《修复世界》是由保罗·法默所著的一本书，该书汇集了他在多个场合的演讲，尤其是他在哈佛医学院、牛津大学、普林斯顿大学等世界著名高校及医学院毕业典礼或其他公开场合的演讲
+                        。这些演讲涵盖了一系列精彩主题.
+                      </p>
+                      <span class="price-tag">￥18.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《克林索尔的最后夏天》</h2>
+                      <img src="tupian\11.jpg" alt="《克林索尔的最后夏天》" class="activity-img">
+                      <p>简介：《克林索尔的最后夏天》是赫尔曼·黑塞创作于1919年的中篇小说。这部小说通过讲述战后世界混乱未复的背景下，克林索尔与友人在夏日的漫游和辩论，最终耗尽生命完成画作的故事，展现了对生命、艺术和自由的深刻探索。
+                      </p>
+                      <span class="price-tag">￥20.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+                    <li class="shengchaList">
+                      <h2>《三十六计》</h2>
+                      <img src="tupian\12.jpg" alt="《三十六计》" class="activity-img">
+                      <p>简介：《三十六计》是中国古代一部著名的兵法策略书籍，也被称为“三十六策”或“三十六计策”，成书时间大约在明清时期，具体作者不详，但普遍认为其内容源自更早的兵法和历史经验。这本书以其独特的智慧和策略思想在军事、政治、商业乃至日常生活中被广泛引用。
+                      </p>
+                      <span class="price-tag">￥26.00</span> 
+                      <span class="dahui" id="dahui_1" onclick="handleClick('打回', this)">打回</span> 
+                      <span class="tongguo" id="tongguo_1" onclick="handleClick('通过', this)">通过</span> 
+                    </li>
+    </ul>
+</div>
+  <script>
+   function handleClick(action, button) {
+    // 获取所在li元素中的书名（假设结构稳定，h2标签存放书名）
+    var bookName = button.parentNode.querySelector('h2').innerText;
+    // 获取所在li元素中的简介内容（假设结构稳定，p标签存放简介）
+    var bookIntro = button.parentNode.querySelector('p').innerText;
+    if (action === '打回') {
+        // 结合书名、简介等部分信息生成打回的提醒内容
+        alert(`书籍《${bookName}》（简介：${bookIntro.substring(0, 30)}...）已被打回，后续请查看相关处理流程。`);
+    } else if (action === '通过') {
+        // 结合书名、简介等部分信息生成通过的提醒内容
+        alert(`恭喜，书籍《${bookName}》（简介：${bookIntro.substring(0, 30)}...）已通过审核，即将进行下一步流程。`);
+    }
+    // 找到按钮所在的列表项（li元素）并移除
+    var listItem = button.parentNode;
+    listItem.remove();
+}
+</script>
+</body>
+
+</html>

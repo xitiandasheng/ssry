@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="referrer" content="no-referrer">
+    <title>二手书交易平台</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/lianxiwomen.css" />
+    
+  </head>
+  <body>
+  	<div class="header">
+        <div class="slogan">网罗天下图书 传承中华文明</div>
+        <div class="nav">
+            <a href="dengluzhuce.html">登录/注册</a>
+            <a href="#">消息</a>
+            <a href="gouwuche.html" class="cart">购物车</a>
+            <a href="#">我的订单</a>
+            <a href="#">个人中心</a>
+            <a href="houtaiguanli.html">后台管理</a>
+            <div class="dropdown">
+                <button class="dropdown-button">客服</button>
+                <div class="dropdown-content">
+                    <button class="message-button" onclick="location.href='liuyanban.html'">在线留言</button>
+                    <p>客服电话: 010-89648155</p>
+                    <p>服务时间:</p>
+                    <ul class="list">
+                        <li>客服咨询: 08:00-21:00</li>
+                        <li>纠纷处理: 09:00-12:30, 13:30-18:00</li>
+                        <li>图书审核: 09:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#">送至 北京</a>
+            <a href="liuyanban.html">留言板</a>
+            <a href="#">手机平台</a>
+        </div>
+    </div>
+         <img src="images\logo.png" alt="Logo" class="logo">
+         
+
+     <!-- 搜索框 -->
+     <div class="search-box">
+         <input type="text" placeholder="搜索书籍...">
+         <input type="submit" value="搜索">
+     </div>
+
+     <!-- 网页头-弹性布局 -->
+     <div class="head">
+         <a href="index.html"><div>网站首页</div></a>
+         <a href="fenlei.html"><div>书籍分类</div></a>
+         <a href="xinwentuisong.html"><div>新闻推送</div></a>
+         <a href="maijiazhongxin.html"><div>卖家中心</div></a>
+         <a href="lianxiwomen.html"><div>联系我们</div></a>
+     </div>
+     
+        <!--正文布局-->
+    	<div class="main">
+      <h2 class="title">联系我们</h2>
+      <p class="main-p">CONTACT US</p>
+      <div id="img"></div>
+      <div class="content">
+          <h4 class="title-cont">杭州xxxx有限公司</h4>
+          <p>联系电话：400-xxx-1080</p>
+          <p>Email： kefu@xxxx.com</p>
+          <p>商务合作：marketing@xxxx.com</p>
+          <p>网站地址：http://www.xxxx.com</p>
+      </div>
+      
+  <div class="footer">
+    <a href="#">关于网页</a>
+    <a href="#">联系我们</a>
+    <a href="#">帮助中心</a>
+    <a href="#">版权隐私</a>
+    <a href="#">广告业务</a>
+    <a href="#">工作机会</a>
+    <a href="#">移动版</a>
+    <a href="#">图书目录</a>
+    <a href="#">图书标签</a>
+    <a href="#">热搜书籍</a>
+    <a href="#">作家大全</a>
+    <div class="copyright">
+        &copy; 2002-2024 Kongfz.com 二手书交易平台版权所有
+    </div>
+	</div>
+	
+  <script>
+      window.onload = function() {
+          var left = -300; // inner的左边距
+          var speed = 5; // 移动速度，5像素/帧
+          var imgDiv = document.getElementById('img');
+
+          function move() {
+              left += speed;
+              imgDiv.style.left = left + 'px';
+
+              if (left < 0) {
+                  window.requestAnimationFrame(move);
+              } else {
+                  left = 0;
+              }
+          }
+
+          move();
+      };
+  </script>
+
+
+  </body>
+ </html>

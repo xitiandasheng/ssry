@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发表评论</title>
+	<link rel="stylesheet" type="text/css" href="css/pinglunqu.css" />
+</head>
+
+<header>
+    
+    <a href="maijiazhongxin.html" id="homeButton" class="home-button">返回卖家中心</a>
+</header>
+
+<script type="text/javascript">
+	function addComment() {
+		var text = document.getElementById("text");
+		if(text.value) {
+			var comment = document.createElement("div");
+			comment.className = 'comment';
+			comment.innerHTML = "<div id='comment_name'>星星不眨眼<span>[浙江网友]</span></div>";
+			comment.innerHTML += "<p>" + text.value + "</p>";
+			comment.innerHTML += "<div id='comment_bottom'><div>2024-8-11 08:19</div><div>赞同 <span>0</span> / 回复 / 举报</div></div>"
+			var main = document.getElementById("main");
+			main.appendChild(comment);
+			text.value = '';
+		}
+	}
+</script>
+
+
+<body>
+	<div id="main">
+		<div>网友评论｜跟帖管理｜举报</div>
+		<div id="published"><textarea name="" id="text"></textarea>
+			<div id="published_content">
+				<div><img src="https://www.youyu001.com/res/htmlLX/face_1.png" alt="">
+				</div><button onclick="addComment()">发送</button></div>
+		</div>
+		<div id="title">最热评论</div>
+		<div class="comment">
+			<div id="comment_name">史迪仔会上天<span>[浙江网友]</span></div>
+			<p> 卖家描述的“九成新”非常准确。书的封面和内页都保养得很好，只有轻微的使用痕迹，没有明显的折痕或污渍，对于二手书来说，这种状况已经非常不错了。非常满意的一次购物。</p>
+			<div id="comment_bottom">
+				<div>2024-8-11 08:19</div>
+				<div>赞同 <span>48</span> / 回复 / 举报</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

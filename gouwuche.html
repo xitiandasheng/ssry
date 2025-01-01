@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gouwuche.css">
+    <title>二手书交易平台 - 购物车</title>
+</head>
+
+<body>
+    <header>
+        <h1>二手书购物车</h1>
+        <p id="welcome-message">欢迎光临，祝您购物愉快！</p>
+        <a href="index.html" id="homeButton" class="home-button">返回首页</a>
+    </header>
+    <main>
+        <section class="cart-items">
+            <!-- 这里会动态添加每本图书的信息 -->
+        </section>
+        <section class="cart-summary">
+            <h2>购物车汇总</h2>
+            <div class="summary-item">
+                <span class="label">商品数量:</span> <span id="item-count">0</span>
+            </div>
+            <div class="summary-item">
+                <span class="label">总价:</span> <span id="total-price">￥0.00</span>
+            </div>
+            <button id="checkout-btn">去结算</button>
+        </section>
+    </main>
+    <footer>
+        <p>如有任何疑问，请联系客服：<a href="mailto:service@bookstore.com">service@bookstore.com</a></p>
+        <p>&copy; 2024 二手书交易平台版权所有</p>
+    </footer>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function() {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    var cartItems = document.querySelector('.cart-items');
+    var itemCount = document.getElementById('item-count');
+    var totalPrice = document.getElementById('total-price');
+
+    function updateCartUI() {
+        cartItems.innerHTML = '';
+        itemCount.textContent = cart.length;
+        var total = 0;
+        cart.forEach(function(book, index) {
+            var item = document.createElement('div');
+            item.textContent = `${book.name} - ￥${book.price}`;
+            cartItems.appendChild(item);
+            total += book.price;
+        });
+        totalPrice.textContent = `￥${total.toFixed(2)}`;
+    }
+
+    updateCartUI();
+
+    // 去结算按钮的逻辑（示例，实际应用中需要实现结算逻辑）
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+        alert('结算功能尚未实现。');
+    });
+});
+    </script>
+</body>
+
+</html>
