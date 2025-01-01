@@ -1,0 +1,224 @@
+/* 公用样式 */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .header {
+    background-color: #781a1a; /* 深红色背景 */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slogan {
+    font-size: 18px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav .cart {
+    position: relative;
+    /* 假设有购物车图标，可以在这里添加 */
+}
+
+.nav .cart::after {
+    content: "0"; /* 假设购物车有0个商品 */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+   .logo {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 50px; 
+  height: auto;
+ }
+ /* 添加客服下拉菜单的CSS样式 */
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	color: #000000;
+	font-size: 14px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	right: 0;
+	/* 确保下拉菜单在导航栏的右侧 */
+	}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-button {
+	background-color: #781a1a;
+    
+ /* 导航菜单*/
+ .head {
+  background-color: #781a1a;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+ }
+    
+ /* 导航栏 div 元素样式 */
+.head div {
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    /* 添加过渡动画，让背景颜色变化更平滑，这里设置变化在0.3秒内以ease（缓动）方式过渡 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时的动画效果，改变背景颜色 */
+.head div:hover {
+    background-color: #5b5b97;
+}
+a {
+  text-decoration: none;
+}
+    
+ /* 搜索框样式 */
+ .search-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+ }
+    
+ .search-box input[type="text"] {
+  padding: 10px;
+  width: 500px;
+  margin-right: 5px;
+ }
+    
+ .search-box input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #781a1a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+ }
+    
+ .search-box input[type="submit"]:hover {
+  background-color: #5b5b97;
+ }
+ 
+ <!--正文内容-->
+        .main {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            background-image: url('images/lunbo1.jpg');
+            background-size: cover;
+            margin: 20px auto;
+        }
+        #img {
+            background-image: url('images/lunbo2.jpg');
+            position: absolute;
+            background-size: cover;
+            left: -300px;
+            top: 50px;
+            width: 300px;
+            height: 300px;
+        }
+        .title {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            letter-spacing: 10px;
+        }
+        .main-p {
+            width: 100%;
+            text-align: center;
+        }
+        .content {
+   			width: 50%; /* 设置宽度为视口宽度的50% */
+    		height: auto; /* 高度自动，根据内容调整 */
+   			position: absolute;
+    		left: 50%; /* 向左移动50%，然后通过负的margin-left调整到中央 */
+    		top: 55%; /* 向上移动50%，然后通过负的margin-top调整到中央 */
+    		transform: translate(-50%, -50%); /* 使用transform属性进行精确的中心定位 */
+    		background: rgba(255, 255, 255, 0.8);
+    		padding: 15px;
+    		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    		max-width: 800px; /* 设置最大宽度，防止放大过度 */
+    		max-height: 600px; /* 设置最大高度，防止放大过度 */
+}
+        .title-cont {
+            width: 90%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #CD3333;
+            color: #CD3333;
+            padding-left: 10px;
+        }
+        .content p {
+            line-height: 28px;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+   /*网页尾部*/
+   
+   .content {
+   	margin-top: 50px;
+   	/* 根据需要调整 */
+   }
+   
+   .footer {
+   	margin-top: 500px;
+   	/* 与内容区域的margin-top相同 */
+   	background-color: #f5f5f5;
+   	color: #333;
+   	padding: 20px;
+   	text-align: center;
+   }
+   
+   .footer a {
+   	color: #333;
+   	/* 链接颜色，根据图片调整 */
+   	text-decoration: none;
+   	margin: 0 10px;
+   }
+   
+   .footer a:hover {
+   	text-decoration: underline;
+   }
+   
+   .copyright {
+   	margin-top: 10px;
+   	font-size: 12px;
+   }

@@ -1,0 +1,93 @@
+body{
+    padding:0;
+    margin:0px;
+    background: #198ede;
+} 
+.main {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%;
+    height: 100vh; /* 使容器高度占满整个视口高度 */
+    background-image: url('denglu1.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 确保图片覆盖整个容器 */
+    background-position: center; /* 确保图片在容器中居中 */
+    background-repeat: no-repeat; /* 防止图片平铺 */
+    padding: 0;
+    margin: 0;
+}
+#login_main{
+    width: 500px;
+    height: 280px;
+    background:white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.login_main_l{
+    width: 460px;
+    margin: 0 auto;
+}
+
+.login_main_l h4 {
+    color: #43465a;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 20px 0 0px 0;
+}
+.login_main_l .li_o {
+    line-height: 26px;
+    border-bottom: 1px solid #d9dade;
+    width: 100%;
+
+    display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; 
+
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+.login_main_l .msg {
+    float: left;
+    margin-left: 10px;
+    color: #f14700;
+    font-size: 12px;
+    width: 220px;
+    overflow: hidden;
+}
+
+input {
+    border: 0;
+    display: inline-block;
+    outline: none;
+}
+.clear {
+    clear: both;
+    line-height: 0px;
+    overflow: hidden;
+    zoom: 1;
+    font-size: 0px;
+    content: '.';
+}
+.fr {
+    background:rgba(51,159,242);
+    text-align:center;
+    width:60px;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    border-radius:5px;
+    font-size:14px;
+    margin:0 auto;
+    cursor:pointer;
+}
+.inp{ 
+    float:left; 
+    height:26px; 
+    line-height:26px; 
+    color:#43465a; 
+    font-size:14px;
+    width:220px;
+}

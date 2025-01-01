@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* 标题样式 */
+header h1 {
+  background-color: #781a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+.home-button {
+    color: white;
+    background-color: #781a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.home-button:hover {
+    background-color: #5b5b97;
+}
+
+/* 导航栏样式 */
+nav {
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s ease; /* 过渡效果，鼠标悬停时背景色渐变 */
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* 内容区域样式 */
+.content {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.content.show {
+  display: block; /* 通过JavaScript添加show类来显示对应的内容区域 */
+}
+
+.book-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 盒子阴影 */
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果，鼠标悬停时缩放和阴影渐变 */
+  position: relative; /* 为加入购物车按钮设置相对定位 */
+}
+
+.book-item:hover {
+  transform: scale(1.05); /* 鼠标悬停时放大 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 鼠标悬停时阴影加重 */
+}
+
+.book-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.book-item h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.book-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* 加入购物车按钮样式 */
+.add-to-cart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #5cb85c; /* 绿色背景 */
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #4cae4c; /* 鼠标悬停时加深绿色 */
+}
+
+.book-item h4 {
+  color:#ff5733 ; /* 白色文字 */
+  background-color: #fff; /* 橙色背景 */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .book-item {
+    width: 100%; /* 在小屏幕上全宽显示 */
+    margin-bottom: 20px;
+  }
+}
